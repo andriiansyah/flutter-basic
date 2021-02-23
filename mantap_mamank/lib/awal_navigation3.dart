@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mantap_mamank/Aplikasi Pertama/aplikasi_pertama.dart';
+import 'package:mantap_mamank/List%20dan%20ListView/list_dan_listview.dart';
 import 'package:mantap_mamank/Stateless%20dan%20Statefull%20Widget/stateless_statefull.dart';
 import 'package:mantap_mamank/Text Widget/text_widget.dart';
 import 'package:mantap_mamank/Row dan Column/row_column.dart';
@@ -65,6 +66,15 @@ class Awal extends StatelessWidget {
               }));
             },
           ),
+
+          RaisedButton(
+            child: Text("List dan ListView"),
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return List_Dan_ListView();
+              }));
+            },
+          )
 
         ],
       ),
